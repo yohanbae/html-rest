@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+// font-family: 'Lato', sans-serif;
+// font-family: 'Grand Hotel', cursive;
+
+body { margin:0; padding:0;}
+.ham {
+  position:fixed;
+  top:45px; right:40px;
+  z-index: 9999;
+  cursor:pointer;
+  // mix-blend-mode: difference;
+  color:white;
+  .theicon {
+    font-size:50px;
+
+  }
+  @media (min-width: 992px) {
+    display:none;
+  }
+}
+
+
+.block1 {
+  background:url('./images/block1-bg.png');
+  // background-size: 100% 100%;
+  background-size:cover;
+  color:white;
+  text-align: center;
+  min-height:100vh;
+  position:relative;
+  img {
+    margin-top:50px;
+    height:45px; width: 130px;
+    margin-bottom: 30px;
+  }
+  ul {
+    width:60vw;
+    height:100vh;
+    position:fixed;
+    top:-15px; left:-40px;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    li {
+      list-style: none;
+      font-size:30px;
+      padding-left:20px;
+      font-family: 'Lato', sans-serif;
+      border-bottom:2px solid white;
+      &:last-child {border-bottom: none;}
+      margin:0;
+      height: calc(100vh / 5);
+      text-align: left;
+      align-items: center;
+      display:grid;
+      cursor:pointer;
+      &:hover{
+        background:rgba(0,0,0,0.8);
+        @media (min-width: 992px) { background:none; }
+      }
+    }    
+
+    @media (min-width: 992px) {
+      margin:auto auto;
+      width:90%;
+      margin-bottom:30px;
+      position:static;
+      background:none;
+      height: inherit;
+
+      li {
+        list-style: none;
+        display:inline-block;
+        margin-right: 10px;
+        font-size: 30px;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        border:none;
+        height:auto;
+        text-align: center;
+
+      }    
+    }
+
+  } // ul end
+  .mode {
+    display:none;
+    @media (min-width: 992px) {
+      display:block;
+    }
+  }
+  .visible { display:block; }
+
+  .text1 {
+    font-family: 'Grand Hotel', cursive;
+    font-size:100px;
+    
+    @media (min-width: 1200px) { font-size:200px; margin-bottom: 20px; }
+    @media (min-width: 1400px) { font-size:250px; margin-bottom: 40px; }
+  }
+  .text2 {
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    width: 80%;
+    margin:auto auto;
+    margin-bottom: 50px;
+
+    @media (min-width: 1400px) { font-size:50px; }    
+  }
+
+  .button {
+    margin: auto auto;
+    font-family: 'Lato', sans-serif;
+    padding: 20px 80px;
+    background: white;
+    color:#e8565e;
+    display: inline-block;
+    margin-bottom:115px;
+    border-radius: 30px;
+    font-weight:700;
+  }
+
+
+
+
+} // block1 end
+
+
+.block2 {
+  background: url('./images/block2-bg.png');
+  // background-size: 100% 100%;
+  background-size:cover;
+  padding: 35px 20px 75px 20px;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    padding: 75px 20px 135px 20px;
+  }
+  @media (min-width: 1200px) {
+    padding: 75px 90px 135px 90px;
+  }
+  
+  .title {
+    font-family: 'Grand Hotel', cursive;
+    font-size:50px;
+    color:#bf2222;
+    margin-bottom: 10px;
+
+    @media (min-width: 1400px) {
+      font-size:125px;      
+    }
+  }
+  .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+    width:80%;
+    margin:auto auto;
+    margin-bottom: 70px;
+
+    @media (min-width: 1400px) {
+      width:60%;      
+      font-size:30px;
+    }
+  }
+
+  .thegrid{
+    .item {
+      text-align: center;
+      img {
+        width:90px; height:90px;
+        margin-bottom: 10px;
+
+        @media (min-width: 1400px) {
+          width:320px; height:320px;
+        }
+      }
+      .text1 {
+        font-family: 'Grand Hotel', cursive;
+        font-size:30px;
+        color:#bf2222;
+
+        @media (min-width: 1400px) { font-size:67px; }
+      }
+      .text2{
+        font-family: 'Lato', sans-serif;
+        color:#3d3d3d;
+        font-size:22px;
+        margin-bottom:30px;
+
+        @media (min-width: 1400px) {
+          margin-bottom:50px;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap:30px;    
+      display: grid;
+    }
+
+  }
+
+}  // block2 END
+
+
+.block3 {
+  background: url('./images/block3-bg.png');
+  // background-size: 100% 100%;
+  background-size:cover;
+
+  padding: 155px 90px;
+  text-align: center;
+  color:white;
+  .title {
+    font-family: 'Grand Hotel', cursive;
+    font-size:50px;
+    margin-bottom: 55px;
+
+    @media (min-width: 1400px) {
+      font-size:125px;
+    }
+  }
+  .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    width: 80%;
+    margin:auto auto;
+    margin-bottom:50px;
+
+    @media (min-width: 1400px) {
+      width:60%;
+      font-size:30px;
+      margin-bottom:110px;
+
+    }
+  }
+
+  .thegrid {
+    width:100%;
+
+    .item {
+      width: 100px;
+      height:100px;
+      border-radius: 50%;
+      border:2px dashed white;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto auto;
+      margin-bottom:30px;
+      .inside {
+        .num {
+          font-family: 'Lato', sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+        }
+        .text {
+          font-family: 'Lato', sans-serif;
+          font-size:20px;
+        }
+      }
+
+      @media (min-width: 1400px) {
+        width: 340px;
+        height:340px;
+        .inside {
+          .num {
+            font-size:67px;
+          }
+          .text {
+            font-size:50px;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 340px 340px 340px;
+      justify-content:space-around;      
+      margin-bottom:0px;
+    }
+
+  }
+
+} // block3 END
+
+
+.block4 {
+  background: #eee6cc;
+  padding: 45px 20px 60px 20px;
+
+  .title {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 50px;
+    margin-bottom: 55px;
+    color: #bf2222;
+    text-align: center;
+  }
+  .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    width: 80%;
+    margin:auto auto;
+    margin-bottom:110px;
+    color:#3d3d3d;
+    text-align: center;
+
+  }
+
+  @media (min-width: 992px) {
+    padding: 85px 20px 150px 20px;
+  }
+  @media (min-width: 1400px) {
+    padding: 85px 120px 150px 120px;
+
+    .title {
+      font-size:125px;
+    }
+    .subtitle{
+      font-size:30px;
+      width:60%;
+    }
+  }
+
+  .thegrid{
+    .item {
+      display:grid;
+      grid-template-columns: 60px 1fr;
+      grid-gap:20px;
+      margin-bottom: 50px;
+      img { width: 50px; }
+      .theright {
+        .text1 {
+          font-family: 'Grand Hotel', cursive;
+          color: #bf2222;
+          font-size:20px;
+          margin-bottom: 10px;
+        }
+        .text2 {
+          font-family: 'Lato', sans-serif;
+          font-size:15px;
+          color: #3d3d3d;
+
+        }
+      } // theright end
+    }   //item end
+
+    @media (min-width: 992px) {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap:40px;
+    }
+    .item {
+      margin-bottom:0px;
+    }
+
+    @media (min-width: 1400px) {
+      grid-gap:110px;
+      .item {
+        display:grid;
+        grid-template-columns: 120px 1fr;
+        grid-gap:20px;
+        margin-bottom: 20px;
+        img { width: 120px; }
+        .theright {
+          .text1 {
+            font-size:50px;
+            margin-bottom: 10px;
+          }
+          .text2 {
+            font-size:22px;
+          }
+        }
+      }
+    }
+
+  } // thegrid end
+
+} // block4 END
+
+
+
+.block5{
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:100vh;    
+  }
+
+  .left {
+    display:none;
+    background:url('./images/block5-left.png');
+    background-size:cover;    
+    @media (min-width: 992px) {
+      display:block;
+    }
+  }
+  .right {
+    background:#faf5e4;
+    display:grid;
+    align-items: center;
+    padding:30px 20px;
+    height:100vh;
+
+    @media (min-width: 992px) {
+      padding:0 95px;      
+      height:auto;
+    }
+    
+    .content {
+      .text1 {
+        font-family: 'Grand Hotel', cursive;
+        color: #bf2222;
+        font-size:50px;
+        margin-bottom: 50px;
+      }
+      .text2{
+        font-family: 'Lato', sans-serif;
+        font-size:20px;
+        color: #3d3d3d;
+        margin-bottom: 30px;
+      }
+      .button {
+        font-family: 'Lato', sans-serif;
+        font-size:25px;
+        padding: 15px 75px;
+        background: #e8565e;
+        color:white;
+        display: inline-block;
+        border-radius: 30px;
+        font-weight:700;
+      }
+
+      @media (min-width: 1200px) {
+        .text1{
+          font-size:100px;
+        margin-top: 0px;
+        }
+        .text2{
+          font-size:30px;
+        }
+      }
+
+    }    
+  }
+
+} //block5 end
+
+
+.block6{
+  padding: 60px 20px;
+  background:#eee6cc;
+  text-align:center;
+  .title {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #bf2222;
+    text-align: center;
+  }
+  .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    width: 90%;
+    margin:auto auto;
+    margin-bottom:40px;
+    color:#3d3d3d;
+  }
+
+  @media (min-width: 992px) {
+    padding:100px 20px;
+  }
+  @media (min-width: 1200px) {
+    padding: 100px 120px;
+    .title {
+      font-size:125px;
+      margin-bottom: 55px; 
+    }
+    .subtitle {
+      font-size:30px;
+      width: 60%;
+      margin-bottom:110px;
+    }
+  }
+
+  .thegrid {
+
+    .item {
+      padding:30px 20px;
+      img {height:107px;}
+      .text1 {
+        font-family: 'Grand Hotel', cursive;
+        font-size: 30px;
+        color:#bf2222;
+        margin-bottom: 30px;
+        @media (min-width: 1200px) {
+          font-size: 40px;
+        }
+        @media (min-width: 1400px) {font-size:50px; }
+      }
+      .text2 {
+        font-family: 'Lato', sans-serif;
+        font-size:14px;
+        margin-bottom: 30px;
+        color:#3d3d3d;
+        @media (min-width: 1200px) {
+          font-size: 22px;
+        }
+      }
+      .button {
+        font-family: 'Lato', sans-serif;
+        font-size:20px;
+        padding: 20px 0;
+        text-align: center;
+        background: #e8565e;
+        color:white;
+        display: inline-block;
+        width:100%;
+        border-radius: 30px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      display:grid;
+      grid-gap:50px;
+      grid-template-columns: 1fr 1fr 1fr;      
+    }
+
+  }
+
+} //block6 END
+
+
+.block7 {
+  padding-top:125px;
+  padding-bottom:150px;
+  position:relative;
+  text-align: center;
+  img {
+    width: 310px;
+    height:310px;
+    margin-bottom: 55px;
+  }
+  .text1 {
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
+    font-size:20px;
+    margin-bottom: 10px;
+    color:#3d3d3d;
+    z-index:99;
+
+    @media (min-width: 992px) {
+      font-size:50px;      
+    }
+
+  }
+  .text2 {
+    font-family: 'Grand Hotel', cursive;
+    font-size:86px;
+    color:#bf2222;
+    z-index:999;
+  }
+  .theback {
+    position:absolute;
+    width:100%;
+    height:435px;
+    background:url('./images/block6-bottom.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    left:0;
+    bottom:0;
+    pointer-events: none;
+    z-index:-10;
+  }
+}// block7 END
+
+
+.block8 {
+  padding-top: 125px;
+  padding-bottom:150px;
+  text-align:center;
+  background:#faf5e4;
+  .text1 {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 50px;
+    color:#bf2222;
+    margin-bottom: 50px;
+  }
+  .text2 {
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    color:#3d3d3d;
+    width:90%;
+    margin:auto auto;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 992px) {
+    .text1{font-size:125px;}
+    .text2{font-size: 30px;width:70%;}
+  }
+
+  .thewrap {
+    background:none;
+    border-radius:30px;
+    width: 80%;
+    height:150px;
+    position:relative;
+    overflow:hidden;
+    margin:auto auto;
+
+    @media (min-width: 992px) {
+      width: 60%;
+      height:70px;
+      background:white;
+    }
+
+    .thetext {
+      height:70px;
+      border:none;
+      background:white;
+      font-size:25px;
+      width:calc(100% - 20px);
+      left:0; top:0;
+      position:absolute;
+      color:#3d3d3d;
+      border-radius:30px;
+      padding-left:20px;
+      &:focus {
+        outline:none;
+      }
+      @media (min-width: 992px) {
+        width:calc(100% - 225px);
+        border-radius:0px;
+
+      }
+    }
+    .button {
+      font-family: 'Lato', sans-serif;
+      font-size:25px;
+      text-align: center;
+      background: #e8565e;
+      color:white;
+      display: inline-block;
+      width:100%;
+      border-radius: 30px;
+      height:70px;
+      display:grid;
+      align-items:center;
+      right:0; top:80px;
+      position:absolute;
+      cursor:pointer;
+      font-weight: 700;
+      @media (min-width: 992px) {
+        width:calc(100%);
+        right:0; top:0;
+        width:225px;
+      }
+    }
+
+  }
+} //block8 END
+
+.block9 {
+  padding: 40px 20px;
+  background: #3d3d3d;
+  color:white;
+
+  @media (min-width: 992px) {
+    display:grid;
+    grid-template-columns:300px 1fr 1fr 1fr;
+    grid-gap:30px;
+  }
+  @media (min-width: 1200px) {
+    padding: 80px 120px;    
+  }
+
+  .item1 {
+    margin-bottom:30px;
+    @media (min-width: 992px) { margin-bottom: 0px; }
+    .text1 {
+      font-family: 'Grand Hotel', cursive;
+      font-size: 45px;
+      color:#bf2222;
+    }
+    .text2 {
+      color:white;
+      font-family: 'Lato', sans-serif;
+      font-size:25px;
+    }
+  }
+
+  .item2 {
+    padding-top:10px;
+    margin-bottom:30px;
+    @media (min-width: 992px) { margin-bottom: 0px; }
+    .text1 {
+      font-family: 'Grand Hotel', cursive;
+      font-size: 35px;
+      color:#bf2222;
+    }
+    .text2 {
+      color:white;
+      font-family: 'Lato', sans-serif;
+      font-size:20px;
+      .right {
+        margin-right:10px;
+        margin-bottom:5px;
+      }
+    }    
+  }
+}
